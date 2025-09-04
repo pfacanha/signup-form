@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  /* Colors */
+  --dark-color: rgb(27, 21, 21);
+}
+
+body {
+  background-color: var(--dark-color);
+}
+
+.side-container {
+  background-image: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  width: 35vw;
+}
+
+.form {
+  background-color: grey;
+  width: 65vw;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  height: 100vh;
+}
