@@ -68,6 +68,15 @@ p {
 .form {
   background-color: grey;
   width: 65vw;
+
+  position: relative;
+}
+
+.message {
+  background-color: rgb(175, 158, 158);
+
+  position: absolute;
+  top: 150px;
 }
 
 #wrapper {
