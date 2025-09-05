@@ -38,6 +38,7 @@ img {
 
 p {
   font-size: var(--large-l);
+  margin: 0;
 }
 
 .side-container {
@@ -86,7 +87,7 @@ p {
 }
 
 .message > * {
-  margin: 10px;
+  margin: 15px;
 }
 
 .intro-message > p {
