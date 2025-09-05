@@ -22,13 +22,14 @@ html {
   --dark-color: rgb(27, 21, 21);
 
   /* Sizes */
-  --small-s: 20px;
+  --small-font: 20px;
+  --small-margin: 15px;
   --medium-m: 40px;
-  --large-l: 80px;
+  --large-font: 80px;
+  --large-margin: 80px;
   --full-size: 100%;
 
   /* Layout */
-  --small-margin: 15px;
   --max-height: 100vh;
   --min-width: 35vw;
   --medium-width: 65vw;
@@ -48,7 +49,7 @@ img {
 }
 
 p {
-  font-size: var(--large-l);
+  font-size: var(--large-font);
   margin: 0;
 }
 
@@ -77,8 +78,8 @@ p {
 }
 
 .banner img {
-  width: var(--large-l);
-  margin-right: var(--small-s);
+  width: var(--large-margin);
+  margin-right: var(--small-margin);
 }
 
 .form {
@@ -104,12 +105,9 @@ p {
   padding: var(--small-margin);
 }
 
-.one > * {
+.one p {
   margin: var(--small-margin);
-}
-
-.intro > p {
-  font-size: var(--small-xs);
+  font-size: var(--small-font);
   max-inline-size: var(--max-ch);
   line-height: 1.5;
 }
