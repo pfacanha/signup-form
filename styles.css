@@ -4,7 +4,6 @@
   src: url("./fonts/Norse-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
 }
 
 /* Alegreya Sans Regular */
@@ -14,7 +13,6 @@
     url("./fonts/alegreyasans-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
 
 html {
@@ -30,6 +28,7 @@ html {
 :root {
   /* Colors */
   --bright-color: white;
+  --greyish-color: rgb(247, 230, 230);
   --dark-color: rgb(27, 21, 21);
 
   /* Sizes */
@@ -52,7 +51,7 @@ html {
 }
 
 body {
-  background-color: var(--dark-color);
+  background-color: var(--bright-color);
 }
 
 img {
@@ -98,16 +97,15 @@ p {
   display: flex;
   flex-direction: column;
 
-  background-color: rgb(161, 149, 149);
   width: var(--medium-width);
 }
 
 .section {
-  border: 1px solid blue;
+  background-color: var(--greyish-color);
 }
 
 .one {
-  background-color: rgb(175, 158, 158);
+  background-color: var(--greyish-color);
   height: 37vh;
 
   font-family: "Alegreya Sans", serif;
@@ -117,6 +115,19 @@ p {
   justify-content: end;
 
   padding: var(--small-margin);
+}
+
+.two {
+  background-color: var(--bright-color);
+
+  height: 250px;
+
+  box-shadow: 0px 3px 5px rgb(80, 78, 78);
+  z-index: 1;
+}
+
+.three {
+  flex: 1;
 }
 
 .one p {
