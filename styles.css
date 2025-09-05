@@ -1,6 +1,9 @@
 @font-face {
+  /* Option 1 */
   font-family: "Norse-Bold";
   src: local("Norse-Bold"), url("./fonts/Norse-Bold.otf") format("opentype");
+
+  /* Option 2 */
 }
 
 html {
@@ -68,15 +71,28 @@ p {
 .form {
   background-color: grey;
   width: 65vw;
-
-  position: relative;
 }
 
 .message {
   background-color: rgb(175, 158, 158);
+  height: 37vh;
 
-  position: absolute;
-  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  padding: 20px;
+  width: 100%;
+}
+
+.message > * {
+  margin: 10px;
+}
+
+.intro-message > p {
+  font-size: var(--small-xs);
+  max-inline-size: 66ch;
+  line-height: 1.5;
 }
 
 #wrapper {
@@ -84,6 +100,6 @@ p {
   justify-content: center;
 
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
   height: 100vh;
 }
