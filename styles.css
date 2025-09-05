@@ -1,9 +1,20 @@
+/* Norse Bold */
 @font-face {
-  /* Option 1 */
-  font-family: "Norse-Bold";
-  src: local("Norse-Bold"), url("./fonts/Norse-Bold.otf") format("opentype");
+  font-family: "Norse";
+  src: url("./fonts/Norse-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
-  /* Option 2 */
+/* Alegreya Sans Regular */
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("./fonts/alegreyasans-regular-webfont.woff2") format("woff2"),
+    url("./fonts/alegreyasans-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -30,6 +41,7 @@ html {
   --full-size: 100%;
 
   /* Layout */
+  --large-height: 120px;
   --max-height: 100vh;
   --min-width: 35vw;
   --medium-width: 65vw;
@@ -62,7 +74,7 @@ p {
 }
 
 .banner {
-  font-family: "Norse-Bold", serif;
+  font-family: "Norse", serif;
   color: var(--bright-color);
 
   display: flex;
@@ -74,7 +86,7 @@ p {
 
   backdrop-filter: brightness(0.5);
   width: var(--full-size);
-  height: 120px;
+  height: var(--large-height);
 }
 
 .banner img {
@@ -97,6 +109,8 @@ p {
 .one {
   background-color: rgb(175, 158, 158);
   height: 37vh;
+
+  font-family: "Alegreya Sans", serif;
 
   display: flex;
   flex-direction: column;
