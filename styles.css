@@ -145,6 +145,7 @@ button {
   flex: 1;
 }
 .three > p {
+  font-family: "Alegreya Sans";
   margin-top: 20px;
   font-size: var(--small-font);
 }
