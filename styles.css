@@ -137,8 +137,7 @@ button {
 }
 
 .one p,
-.two p,
-.grid {
+.two p {
   margin: var(--small-margin);
 
   font-family: "Alegreya Sans", serif;
@@ -147,7 +146,11 @@ button {
   max-inline-size: var(--max-ch);
   line-height: 1.5;
 }
+.grid {
+  margin: var(--small-margin);
 
+  font-family: "Alegreya Sans", serif;
+}
 .two {
   background-color: var(--bright-color);
   height: 250px;
