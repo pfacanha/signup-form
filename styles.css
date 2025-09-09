@@ -30,6 +30,8 @@ html {
   --bright-color: white;
   --greyish-color: rgb(250, 242, 242);
   --dark-color: rgb(27, 21, 21);
+  --light-dark-color: #e5e7eb;
+  --webpage-green: #596d48;
 
   /* Sizes */
   --small-font: 20px;
@@ -51,17 +53,28 @@ html {
 }
 
 body {
-  background-color: var(--bright-color);
+  background-color: var(--dark-color);
 }
 
 img {
   width: var(--full-size);
   height: auto;
 }
-input,
-label {
+input {
   display: block;
   width: 230px;
+  border: 2px solid var(--light-dark-color);
+}
+
+input:focus {
+  border: 2px solid blue;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px red;
+  outline: none;
+}
+
+input[type="password"]:invalid {
+  border: 2x solid red;
 }
 
 label {
@@ -78,7 +91,7 @@ button {
   font-weight: 700;
 
   color: var(--bright-color);
-  background-color: green;
+  background-color: var(--webpage-green);
 
   padding: 10px;
   border-radius: 5px;
@@ -87,6 +100,14 @@ button {
 
   width: 180px;
   cursor: pointer;
+}
+form {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0px 3px 3px rgb(80, 78, 78);
+
+  width: var(--medium-width);
 }
 
 .side-container {
@@ -122,16 +143,6 @@ button {
   background-color: var(--greyish-color);
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-
-  box-shadow: 0px 3px 3px rgb(80, 78, 78);
-
-  width: var(--medium-width);
-  background-color: var(--greyish-color);
-}
-
 .one {
   background-color: var(--greyish-color);
   height: 37vh;
@@ -143,21 +154,6 @@ button {
   padding: var(--small-margin);
 }
 
-.one p,
-.two p {
-  margin: var(--small-margin);
-
-  font-family: "Alegreya Sans", serif;
-  font-size: var(--small-font);
-
-  max-inline-size: var(--max-ch);
-  line-height: 1.5;
-}
-.grid {
-  margin: var(--small-margin);
-
-  font-family: "Alegreya Sans", serif;
-}
 .two {
   background-color: var(--bright-color);
   height: 250px;
@@ -170,6 +166,16 @@ button {
   padding: 30px;
   flex: 1;
 }
+.one p,
+.two p {
+  margin: var(--small-margin);
+
+  font-family: "Alegreya Sans", serif;
+  font-size: var(--small-font);
+
+  max-inline-size: var(--max-ch);
+  line-height: 1.5;
+}
 .three > p {
   font-family: "Alegreya Sans";
   margin-top: 20px;
@@ -181,6 +187,10 @@ button {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   gap: 10px;
+
+  margin: var(--small-margin);
+
+  font-family: "Alegreya Sans", serif;
 }
 
 #wrapper {
