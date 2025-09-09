@@ -177,9 +177,9 @@ button {
 }
 
 .grid {
-  display: grid; /* Declares the element as a grid container */
-  grid-template-columns: 1fr 1fr; /* Defines two columns, each taking an equal fraction of available space */
-  grid-template-rows: auto auto auto; /* Defines three rows, with heights automatically adjusted to content */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
   gap: 10px;
 }
 
