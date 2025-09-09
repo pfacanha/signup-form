@@ -171,7 +171,7 @@ form {
   flex: 1;
 }
 .one p,
-.two h3 {
+.two p {
   margin: var(--small-margin);
 
   font-family: "Alegreya Sans", serif;
