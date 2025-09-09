@@ -34,6 +34,7 @@ html {
   --webpage-green: #596d48;
 
   /* Sizes */
+  --xs-font: 15px;
   --small-font: 20px;
   --small-margin: 15px;
   --medium-m: 40px;
@@ -63,7 +64,9 @@ img {
 input {
   display: block;
   width: 230px;
+
   border: 2px solid var(--light-dark-color);
+  border-radius: 5px;
 }
 
 input:focus {
@@ -78,6 +81,7 @@ input[type="password"]:invalid {
 }
 
 label {
+  font-size: var(--xs-font);
   text-transform: uppercase;
 }
 
