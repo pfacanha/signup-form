@@ -64,6 +64,10 @@ label {
   width: 250px;
 }
 
+label {
+  text-transform: uppercase;
+}
+
 p {
   font-size: var(--large-font);
   margin: 0;
